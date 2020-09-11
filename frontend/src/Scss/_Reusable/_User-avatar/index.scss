@@ -1,0 +1,58 @@
+.user-creator-avatar-element
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    .user-creator-avatar-element__image-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid palevioletred;
+        border-radius: 50%;
+        padding: 5px;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+        .user-creator-avatar-element__avatar-image
+        {
+            @include main-icon;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }  
+    }
+
+    .user-creator-avatar-element__user-data
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        font-weight: 600;
+        font-family: $third-font;
+        .user-creator-avatar-element__follow-button
+        {
+            border: 1px solid $border-color;
+            font-family: $third-font;
+            font-weight: 600;
+            border-radius: 5px;
+            margin: 5px;
+            background-color: white;
+            padding: 5px;
+
+        }
+        .user-creator-avatar-element__follow-button--selected
+        {
+            @include sec-back;
+            color: white;
+            border: 1px solid transparent;
+        }
+    }
+}

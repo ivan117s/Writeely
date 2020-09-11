@@ -1,0 +1,77 @@
+.book-page-cover
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    .book-page-cover__container
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 25px;
+        width: 520px;
+       
+        .book-page-cover__image
+        {
+            width: 300px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;;
+
+            height: 469px;
+        }
+        .book-page-cover__title
+        {
+            font-family: $main-font;
+            font-size: 25px;
+            margin: 15px 0px; 
+        }
+        .book-page-cover__info
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            background-color: white;
+            border: 1px solid $border-color;
+            padding: 20px 10px;
+            font-family: $main-font;
+            width: 300px;
+            .book-page-cover_info-item
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                white-space: nowrap;
+                .book-page-cover__like-icon
+                {
+                    
+                    height: 25px;
+                    width: 25px;
+                    cursor: pointer;
+                    background-image: url("data:image/svg+xml,%0A%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='25.25px' height='23.5px' viewBox='-0.667 -0.75 25.25 23.5' enable-background='new -0.667 -0.75 25.25 23.5' xml:space='preserve'%3E%3Cpolygon fill='%23EDEDED' stroke='%23DBDBDB' stroke-miterlimit='10' points='24,5 24,12 12,22 0,12 0,5 6,0 12,4 18,0 '/%3E%3C/svg%3E");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                .book-page-cover__like-icon--selected
+                {
+                    @keyframes heart-beat {
+                        0%{transform: scale(.9);}
+                        50%{transform: scale(1);}
+                        100%{transform: scale(.9);}
+                    }
+                    animation: 1s infinite ease heart-beat;
+                    background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='24px' height='24px' viewBox='0 0 24 24' enable-background='new 0 0 24 24' xml:space='preserve'%3E%3ClinearGradient id='SVGID_1_' gradientUnits='userSpaceOnUse' x1='0' y1='12' x2='24' y2='12'%3E%3Cstop offset='0' style='stop-color:%23B85AA2'/%3E%3Cstop offset='1' style='stop-color:%23FF0079'/%3E%3C/linearGradient%3E%3Cpolygon fill='url(%23SVGID_1_)' points='24,6 24,13 12,23 0,13 0,6 6,1 12,5 18,1 '/%3E%3C/svg%3E%0A");
+                    
+                }
+                span 
+                {
+                    cursor: default;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

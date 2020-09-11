@@ -1,0 +1,96 @@
+.main-header__menu-item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    .bell 
+    {
+        @keyframes Notifications-bell 
+        {
+            0%{transform: rotate(0deg);}
+            25%{transform: rotate(5deg);}
+            50%{transform: rotate(-10deg);}
+            75%{transform: rotate(5deg);}
+            100%{transform: rotate(0deg);}
+        }        
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='100px' height='100px' viewBox='0 0 100 100' enable-background='new 0 0 100 100' xml:space='preserve'%3E%3Cellipse fill='%23FFFFFF' cx='51.389' cy='88.242' rx='8.826' ry='9.175'/%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M57,18c0,2.761-2.238,5-5,5h-2c-2.761,0-5-2.239-5-5v-8c0-2.761,2.239-5,5-5h2c2.762,0,5,2.239,5,5V18z'/%3E%3C/g%3E%3Cellipse fill='%23FFFFFF' cx='50.688' cy='51.316' rx='33.75' ry='37.5'/%3E%3Crect x='17' y='51' fill='%23FFFFFF' width='67' height='38'/%3E%3Cpath fill='%23FFFFFF' d='M89.313,84.5c0,2.486-1.846,4.5-4.125,4.5H15.063c-2.278,0-4.125-2.014-4.125-4.5l0,0 c0-2.485,1.847-4.5,4.125-4.5h70.125C87.467,80,89.313,82.015,89.313,84.5L89.313,84.5z'/%3E%3C/svg%3E ");
+        background-position: center;
+        background-repeat: no-repeat;
+        transform-origin: top;
+        background-size: cover;
+        animation: ease 1s infinite Notifications-bell;
+    }
+
+    .add-content-element
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .add 
+        {
+            display: flex;
+            flex-direction: column;
+            height: 20px;
+            width: 20px;
+            .add__item
+            {
+                background-color: white;
+                width: 100%;
+            }
+          
+            background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='1000px' height='1000px' viewBox='0 0 1000 1000' enable-background='new 0 0 1000 1000' xml:space='preserve'%3E%3Crect x='33.25' y='175.75' fill='%23FFFFFF' width='930' height='120'/%3E%3Crect x='33.25' y='438.25' fill='%23FFFFFF' width='930' height='120'/%3E%3Crect x='38.25' y='705.75' fill='%23FFFFFF' width='930' height='120'/%3E%3C/svg%3E%0A");
+            background-position: center;
+            background-repeat: no-repeat;
+            transform-origin: top;
+            background-size: cover;
+        }
+        .add-menu
+        {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            transform: translateY(45px) translateX(-55px);
+            height: auto;
+            width: 130px;
+            background-color: white;
+            overflow: hidden;
+            z-index: 4;
+            box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.082);
+            border-radius: 3px;
+            &::after 
+            {
+                background-color: white;
+                border: 1px solid $border-color;
+                height: 25px;
+                width: 25px;
+            }
+            .add-item
+            {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-family: $third-font;
+                width: 100%;
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+                font-weight: 300;
+                height: 40px;
+                padding: 0px 10px ;
+                @import './icons.scss';
+                &:hover
+                {
+                    background-color: $back-element;
+                }
+            }
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,28 @@
+.main-header__logo
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    .main-header__logo-container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+        width: auto;
+        font-weight: bold;
+        color: white;
+        .main-header__logo-image
+        { 
+            height: 25px;
+            width: 25px;
+            background-repeat: no-repeat;
+            background-size: contain; 
+            background-position: center;
+            background-image: url('../../../Assets/Icons/main-logo.svg');
+            margin-right: 15px;
+            
+        }
+    }
+}

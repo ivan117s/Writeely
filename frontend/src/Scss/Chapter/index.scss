@@ -1,0 +1,42 @@
+.book-box-container
+{
+    .book-info
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 650px;
+        background-color: white;
+        margin: 25px 0px;
+        border-radius: 5px;
+        .book-info__image 
+        {  
+            height: 450px  ;
+            border-radius: 5px;
+            width: calc(450px  * 0.64);
+        }
+        .book-info__footer
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100px;
+            .book-info__title
+            {
+                text-align: center;
+                font-family: $third-font;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .book-info__chapter
+            {
+                text-align: center;
+                font-family: $third-font;
+                font-size: 25px;
+                font-weight: 400;
+            }
+        }
+    }
+}

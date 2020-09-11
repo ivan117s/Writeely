@@ -1,0 +1,29 @@
+.book-page-book-element
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .book-page-book-element__edit-book
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+        a 
+        {
+            width: 300px;
+            text-align: center;
+            color: white;
+            padding: 5px;
+            font-family: $third-font;
+            font-weight: 600;
+            border-radius: 3px;
+            @include sec-back;
+
+        }
+    }
+    @import './cover.scss';
+    @import './synopsis.scss';
+    @import './pages.scss';
+    @import './chapters.scss';
+}

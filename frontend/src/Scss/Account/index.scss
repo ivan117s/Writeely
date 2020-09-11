@@ -1,0 +1,156 @@
+.account-page
+{
+    display: flex;
+    flex-direction: column;
+    .account-element
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+        width: 100%;
+        
+        .account-element__form
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 520px;
+            padding: 25px 0px;
+            background-color: white;
+            border-radius: 5px;
+            height: auto;
+            border: 1px solid $border-color;
+            .account-element__field-avatar
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $back-color;
+                overflow: hidden;
+                font-family: $third-font;
+                height: 100px;
+                width: 100px; 
+                margin: 15px; 
+                label
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    height: 100px;
+                    width: 100px; 
+                    cursor: pointer;
+                    img 
+                    {
+                        border-radius: 50%;
+                        height: 100px;
+                        width: 100px; 
+                    }
+                    .account-element__avatar-default
+                    {
+                        background-image: url('../../Assets/Images/icon192.png');
+                        height: 100px;
+                        width: 100px; 
+                        border-radius: 50%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        background-size: contain;
+                    }
+                }
+               
+            }
+            .account-element__field
+            {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 25px;
+                height: auto;
+                width: 60%;
+                label
+                {
+                    font-family: $third-font;
+                    margin-bottom: 10px;
+                    font-weight: 600;
+                    margin-left: 5px;
+                }
+            }
+            .account-element__field-input
+            {
+                background-color: $back-color;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                font-family: $main-font;
+                width: 100%;
+                font-weight: 600;
+                padding: 10px 5px;
+            }
+            .account-element__field-textarea
+            {
+                background-color: $back-color;
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                font-family: $main-font;
+                width: 100%;
+                font-weight: 600;
+                min-height: 100px;
+                max-height: 150px;
+                min-width: 100%;
+                max-width: 100%;
+                padding: 10px 5px;
+            }
+            .account-element__buttons
+            {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 60%;
+
+                .account-element__saving-element
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 36px;
+                    padding: 10px 0px;
+                    margin-bottom: 5px;
+                }
+
+                .account-element__button-submit 
+                {
+                    @include sec-back;
+                    width: 100px;
+                    border-radius: 5px;
+                    font-family: $main-font;
+                    font-weight: 600;
+                    color: white;
+                    border: none;
+                    text-align: center;
+                    white-space: nowrap;
+                    margin-bottom: 5px;
+                    padding: 10px 0px;
+                }
+    
+                .account-element__button-logout
+                {
+                    text-align: center;
+                    white-space: nowrap;
+                    padding: 10px 0px;
+                    width: 100px;
+                    margin-bottom: 5px;
+                    border: none;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    font-family: $main-font;
+                    color: white;
+                    @include red-back;
+                }
+            }
+            
+        }
+    }
+}

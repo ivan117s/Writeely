@@ -1,0 +1,70 @@
+.book-content
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    .book-content__pages-list
+    {
+        display: flex;
+        flex-direction: column;
+        .book-content__page
+        {
+            border: 1px solid $border-color;
+            background-color: white;
+            border-radius: 5px;
+            width: 520px;
+            min-height: 800px; 
+            padding: 25px 25px ;
+            overflow: auto;
+            margin-bottom: 25px;
+            font-family: $fourth-font;
+            .book-content__page-info
+            {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                margin-bottom: 20px;
+                .book-content__page-number
+                {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 15px;
+                    font-family: $main-font;
+                }
+                .book-content__page-name
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                }
+            }
+            .paragraph-container 
+            {
+                display: flex;
+                margin-bottom: 10px;
+                .paragraph-box
+                { 
+                    line-height: 1.2;
+                    word-wrap: break-word;
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 610px) 
+            {
+                width: 400px;
+                padding: 35px 15px ;
+            }
+            @media screen and (max-width: 400px) 
+            {
+                width: 320px;
+            }
+        }
+    }
+   
+    
+    
+    
+}

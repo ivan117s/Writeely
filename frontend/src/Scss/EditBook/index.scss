@@ -1,0 +1,60 @@
+.edit-book-page
+{
+    @import './chapters.scss';
+    @import './book.scss';
+   
+    margin-bottom: 100px;
+    .editable-pages
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 55px;
+        width: 520px;
+        
+        .editable-pages__chapter
+        {
+            border: 1px solid $border-color;
+            background-color: white;
+            font-family: $fourth-font;
+            padding: 25px;
+            font-size: 20px;
+            word-wrap: break-word;
+            text-align: center;
+        }
+        .editable-pages__create_page_button
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            border: 1px solid $border-color;
+            background-color: white;
+            padding: 5px;
+            margin: 20px 0px;
+            font-family: $third-font;
+            font-size: 15px;
+        
+        }
+        @import './page.scss';
+        @media screen and (max-width: 550px) {
+            width: 410px
+        }
+        @media screen and (max-width: 410px) {
+            width: 310px;
+           
+        }
+    }
+   
+    .edit-book-page__loading
+    {
+        display: flex;
+        justify-content: center;
+        .loading-animation
+        {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    
+
+}

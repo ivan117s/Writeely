@@ -1,0 +1,63 @@
+.explore-search-element__genres
+{
+    
+    .explore-search-element__genres-title
+    {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .genres-list-selected
+    {
+        display: flex;
+        align-items: center;
+        min-height: 30px;
+        background-color: $back-element;
+        margin: 10px 0px;
+        .genres-list-selected__item
+        {
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+            margin-right: 5px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 13px;
+            border: 1px solid $border-color;
+            padding: 5px;
+            height: 30px;
+        }
+    }
+    .explore-search-element__genres-list
+    {
+        display: grid;
+    
+        overflow: auto;
+        gap: 5px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        .genres-list-grid__item
+        {
+            border: 1px solid $border-color;
+            background-color: $back-element;
+            font-family: $main-font;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 0px;
+            min-height: 50px;
+
+        }
+        .genres-list-grid__item--selected
+        {
+            border-color: transparent;
+            @include sec-back;
+            font-family: $main-font;
+            border-radius: 5px;
+            font-weight: 600;
+            color: white;
+            min-height: 50px;
+        }
+    }
+}

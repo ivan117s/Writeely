@@ -1,0 +1,46 @@
+.home-page__best-of
+{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 10px;
+    .best-of__container
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        border-radius: 5px;
+        .best_of__title
+        {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            font-family: $main-font;
+            font-weight: 600;
+            .title__container
+            {
+                display: flex; 
+                align-items: center;
+                span 
+                {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+            
+            
+            @media screen and (max-width: 750px) {
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+        @media screen and (max-width: 750px) 
+        {
+            width: 100%;
+        }
+    }
+}
+
+

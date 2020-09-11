@@ -1,0 +1,61 @@
+.grid-book
+{
+    overflow: auto;
+    position: relative;
+    &:after 
+    {
+        content: "";
+        display: block;
+        padding-top: 205%;
+    }
+    .home__book
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        margin: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        .book__image
+        { 
+            width: 100%;
+            height: calc( 100% - 105px);
+            .image__box
+            {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                img 
+                {
+                    width: 100%;
+                }
+            }
+        }
+        .book__content
+        {
+            height: 105px;
+        }
+    }
+}
+
+.grid-book--loading
+{
+    margin: 0;
+    .home__book
+    {
+        @keyframes loading-book 
+        {
+            0%{background-color: gainsboro;}
+            50%{background-color: white}
+            100%{background-color: gainsboro;}
+        }
+        .book__image
+        { 
+            animation: infinite 1s loading-book ease;
+        }
+    }
+}

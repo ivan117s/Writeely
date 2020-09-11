@@ -1,0 +1,59 @@
+@import './_Variables/index.scss';
+@import "./icons.scss";
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    /*-webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    -webkit-user-select: none;*/
+} 
+
+body  
+{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    button 
+    {
+        cursor: pointer;
+    }
+    textarea 
+    {
+        background-color: $back-color;
+        border-radius: 3px;
+        font-family: $third-font;
+        padding: 5px; 
+        border:  1px solid $border-color;
+    }
+    ::selection {
+        background: rgb(65, 179, 255);
+    }
+    background-color: $back-color;
+}
+
+// Reusable components
+@import './_Reusable/index.scss';
+
+//classes
+@import './_Efects/index.scss';
+ 
+// Pages
+@import './Followed/index.scss';
+@import './SignIn/index.scss';
+@import './Library/index.scss';
+@import './Home/index.scss';
+@import './User/index.scss';
+@import './Bookpage/index.scss';
+@import './Chapter/index.scss';
+@import './Publish/index.scss';
+@import './Login/index.scss';
+@import './Account/index.scss';
+@import './EditBook/index.scss';
+@import './Explore/index.scss';
+
+
+ 

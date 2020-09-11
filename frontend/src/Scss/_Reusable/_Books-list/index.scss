@@ -1,0 +1,47 @@
+.books-list-element
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    min-height: 446px;
+    margin: 15px 0px;
+    .books-list-element__title
+    {
+        width: 95%;
+        margin: 15px 0px;
+        font-size: 18px;
+        font-family: $main-font;
+        padding: 5px;
+        @media screen and (max-width: 450px) 
+        {
+            text-align: center;
+        }
+    }
+    .books-list-element__list
+    { 
+        display: flex;
+        width: 95%;
+        overflow: auto;
+        .books-list-element__list-cotainer
+        {
+            display: flex;
+            flex-direction: row;
+            .home__book--loading
+            {
+                @keyframes loading-book 
+                {
+                    0%{background-color: gainsboro;}
+                    50%{background-color: white}
+                    100%{background-color: gainsboro;}
+                }
+                .book__image
+                { 
+                    animation: infinite 1s loading-book ease;
+                    
+                }
+            }
+        }
+    }
+}

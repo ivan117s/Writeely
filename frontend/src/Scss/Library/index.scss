@@ -1,0 +1,15 @@
+.library-page
+{
+    padding: 50px;
+    .list
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border: 5px solid red;
+        .item
+        {
+            padding: 20px;
+            border:  5px solid greenyellow;
+        }
+    }
+}

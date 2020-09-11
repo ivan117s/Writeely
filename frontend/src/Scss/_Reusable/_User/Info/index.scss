@@ -1,0 +1,48 @@
+.user-perfil__info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 450px;
+    border-radius: 10px;
+    padding: 10px;
+    @import './nickname.scss';
+    @import './data.scss';
+
+    .user-perfil_name
+    {
+        margin-top: 15px; 
+        font-family: $main-font;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .user-perfil_intro
+    {
+        margin-top: 5px; 
+        font-family: $main-font;
+        font-size: 14px;
+        max-height: 70px;
+        overflow: auto;
+    }
+    
+    @media screen and (max-width: 1000px) 
+    {
+        width: 450px;
+    }
+    @media screen and (max-width: 700px) 
+    {
+        width: 400px;
+    }
+    @media screen and (max-width: 500px) 
+    {
+        width: 400px;
+    }
+    @media screen and (max-width: 450px) 
+    {
+        width: 350px;
+    }
+    @media screen and (max-width: 350px) 
+    {
+        width: 100%;
+    }
+}

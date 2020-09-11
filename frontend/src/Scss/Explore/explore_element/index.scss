@@ -1,0 +1,64 @@
+.explore-element
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 5px;
+    width: 600px;
+    margin: 25px auto;
+    border-bottom: 1px solid $border-color;
+    .explore-search-element
+    {
+        font-family: $third-font;
+        padding: 5px;
+        .explore-search__param
+        {
+            display: flex;
+            flex-direction: column;
+            label 
+            {
+                font-weight: 600;
+                font-size: 15px;
+                margin-bottom: 15px;
+            }
+            .explore-search__input-default
+            {
+                border: 1px solid $border-color;
+                border-radius: 5px;
+                font-family: $third-font;
+                font-weight: 600;
+                width: 100%;
+                padding: 5px;
+                background-color: $back-element;
+            }
+        }
+        
+    }
+    @import './genres.scss';
+    .explore-search__search-config
+    {
+        display: flex;
+        padding: 5px 0px;
+        .explore-search__search-config-button
+        {
+            margin-right: 5px;
+            background-color: white;
+            border: 1px solid $border-color;
+            border-radius: 5px;
+            padding: 5px;
+            font-weight: 600;
+            font-family: $third-font;
+        }
+        .explore-search__search-config-button--selected
+        {
+            border: 1px solid transparent;
+            color: white;
+            @include sec-back;
+        }
+    }
+    @media screen and (max-width: 550px) {
+        width: 100%;
+    }
+}

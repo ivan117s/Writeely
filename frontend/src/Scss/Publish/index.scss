@@ -1,0 +1,64 @@
+.publish-page
+{
+    display: flex;
+    flex-direction: column;
+    .create-book-element
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        .create-book-element__container
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            @import './cover.scss';
+            @import './form/index.scss';
+            @media screen and (max-width: 680px) 
+            {
+                flex-direction: column;
+            }
+        }
+        .create-book-element__submit
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            .create-book-element__submit-button
+            {
+                border: none;
+                color: black;
+                background-color: white;
+                border: 1px solid $border-color;
+                font-family: $main-font;
+                font-weight: 600;
+                padding: 20px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+        }
+        .create-book-element__submit-book-buttons
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            .create-book-element__submit-book-button
+            {
+                background-color: white;
+                padding: 15px 100px;
+                border: none;
+                border-radius: 5px;
+                font-weight: 600;
+                font-family: $main-font;
+                color: white;
+                @include main-back;
+            }
+            
+        }
+    }
+}

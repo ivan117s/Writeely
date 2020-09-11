@@ -1,0 +1,73 @@
+.create-book-element__book-form
+{
+    display: flex;
+    background-color: white;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    flex-direction: column;
+    width: 320px;
+    height: 555px;
+    margin: 5px;
+    .create-book-element__cover
+    {
+        display: flex;
+        .create-book-element__cover-image
+        {
+            display: flex;
+            overflow: hidden;
+            img 
+            { 
+                object-fit: cover;
+                border-radius: 5px;
+                width: 310px;
+                height: calc(310px * 1.563);
+            }
+            .image-size-background
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $main-font;
+                border: 1px solid $border-color;
+                background-color: $back-element;
+                border-radius: 5px;
+                width: 310px;
+                height: calc(310px * 1.563);
+            }
+        }
+        
+    }
+    .create-book-element__image-buttons
+    {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 5px;
+        .create-book-element__image-label
+        {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            input[type="file"] 
+            {
+                display: none;
+            }
+            span 
+            {
+                cursor: pointer;
+                border-radius: 5px;
+                padding: 5px;
+                color: black;
+                font-weight: 600;
+                font-size: 14px;
+                font-family: $main-font;
+                border: 1px solid $border-color;
+            }
+        }
+        
+    }
+    @import './cutter.scss';
+    
+}

@@ -1,0 +1,48 @@
+.login-page
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px ;
+    .login-page__login-form
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+        height: 450px;
+        width: 450px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid $border-color;
+        .login-page__login-form-items
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            .login-page__logo
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                margin: 10px;
+                width: 300px;
+                .logo__background
+                {
+                    width: 200px;
+                    height: 50px;
+                    margin: 25px;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    filter: invert(1);
+                    background-image: url("../../Assets/Icons/main-logo.svg");
+                }
+            }
+        }
+    }
+}

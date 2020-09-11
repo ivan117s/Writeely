@@ -1,0 +1,68 @@
+.chapters-creator
+{
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: $third-font;
+    margin-bottom: 25px;
+    background-color: white;
+    padding: 20px 5px;
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    .chapters-creator__creator
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .chapters-creator__title
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $third-font;
+            font-size: 15px;
+            .chapters-creator__title-input
+            {
+                width: 200px;
+                margin: 10px;
+                background-color: $back-element;
+                border: 1px solid $border-color;
+                font-size: 18px;
+                font-family: $fourth-font;
+                padding: 0px  5px;
+                border-radius: 5px;
+            }
+            button 
+            {
+                border: 1px solid $border-color;
+                font-weight: 600;
+                padding: 5px;
+                border-radius: 5px;
+                font-family: $third-font;
+            }
+        }
+    }
+    
+
+    .chapter-creator__chapters
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px ;
+        min-height: 550px;
+        border-radius: 5px;
+        @import './chapter.scss';
+        @media screen and (max-width: 550px) {
+            padding: 25px 10px;
+           
+        }
+    }
+    @media screen and (max-width: 550px) {
+        width: 410px
+    }
+    @media screen and (max-width: 410px) {
+        width: 310px
+    }
+}

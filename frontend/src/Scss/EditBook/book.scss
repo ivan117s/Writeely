@@ -1,0 +1,127 @@
+.edit-book-element
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 520px;
+    margin-top: 50px ;
+    margin-bottom: 25px ;
+    margin-left: auto;
+    margin-right: auto;
+    .edit-book-element__cover
+    {
+        border-radius: 5px;
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .edit-book-element__title
+    {
+        text-align: center;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        word-wrap: break-word;
+        border: 1px solid $border-color;
+        min-height: 55px;
+      
+        padding: 25px;
+        h1 
+        {
+            font-family: $main-font;
+            font-weight: 400;
+            font-size: 20px;
+        }
+    }
+    .edit-book-element__synopsis
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        border: 1px solid $border-color;
+        word-wrap: break-word;
+        border-radius: 5px;
+        min-height: 100px;
+        margin-top: 25px;
+        padding: 25px;
+        h1 
+        {
+            text-align: center;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: $fourth-font;
+            margin-bottom: 10px;
+        }
+        input 
+        {
+            padding: 0px 5px;
+            border: 1px solid $border-color;
+            background-color: white;
+            height: 40px;
+            width: 200px;
+            border-radius: 5px;
+            font-family: $fourth-font;
+            font-size: 20px;
+            margin: 0px auto;
+            margin-bottom: 10px;
+        }
+        textarea
+        {
+            padding: 5px;
+            border: 1px solid $border-color;
+            background-color: white;
+            width: 100%;
+            max-height: 250px;
+            min-height: 250px;
+            line-height: 1.2;
+            border-radius: 5px;
+            font-family: $fourth-font;
+            font-size: 20px;
+            margin: 0px auto;
+            margin-bottom: 25px;
+        }
+        span 
+        {
+            font-size: 18px;
+            font-family: $fourth-font;
+            line-height: 1.2;
+        }
+    }
+    .edit-book-element__buttons
+    {
+        display: flex;
+        justify-content: flex-end;
+        .edit-book-element__button
+        {
+            border: 1px solid $border-color;
+            background-color: white;
+            font-family: $third-font;
+            border-radius: 5px;
+            margin-left: 5px;
+            font-weight: 600;
+            padding: 5px;
+        }
+        .edit-book-element__button-select
+        {
+            @include sec-back;
+            color: white;
+        }
+        .edit-book-element__button--delete
+        {
+            color: white;
+           
+            @include red-back;
+        }
+    }
+    @media screen and (max-width: 610px) {
+        width: 400px;
+        margin-top: 20px ;
+    }
+    @media screen and (max-width: 410px) {
+        width: 310px;
+        
+    }
+   
+}
+  

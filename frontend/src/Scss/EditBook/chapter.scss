@@ -1,0 +1,72 @@
+.chapter-creator__chapter
+{
+    display: flex;
+    justify-content: space-between;
+  
+    font-family: $fourth-font;
+    font-size: 20px;
+    width: 400px;
+    margin-bottom: 5px;
+    list-style: none;
+    .chapter-creator__chapter-name
+    {
+        font-family: $fourth-font;
+        background-color: white;
+        border: 1px solid $border-color;
+        font-size: 20px;
+        padding: 5px 0px;
+        border-radius: 5px;
+        word-break: break-all;
+        width: calc(100% - 100px) ;
+        cursor: pointer;
+        &:hover
+        {
+            background-color: $back-element;
+        }
+    }
+    .chapter-creator__chapter-name-input
+    {
+        width: calc(100% - 100px) ;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+        font-family: $fourth-font;
+        background-color: $back-element;
+        font-size: 20px;
+        padding: 5px;
+        
+    }
+
+    .chapter-creator__chapter-buttons
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100px;
+        .chapter-creator__chapter-button
+        {
+            background-color: white;
+            border-radius: 5px;
+            border: 1px solid $border-color;
+            padding: 5px;
+            font-weight: 600;
+            font-family: $third-font;
+        }
+        .chapter-creator__chapter-button--delete
+        {
+            @include red-back;
+            width: 30px;
+            margin-left: 5px;
+            color: white;
+        }
+    }
+
+    .chapter-creator__chapter-name-input
+    {
+
+    }
+    
+    @media screen and (max-width: 550px) {
+        width: 250px;
+        
+    }
+}

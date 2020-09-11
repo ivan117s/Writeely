@@ -1,0 +1,105 @@
+.user-perfil-min
+{
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    background-color: white;
+    padding: 10px 5px ;
+    width: 520px;
+    border: 1px solid $border-color;
+    margin-bottom: 15px;
+    .user-perfil-min__avatar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 100px;
+        .user-perfil-min__avatar-image-link
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            .user-perfil-min__avatar-image
+            {
+                height: 100%;
+                width: 100%;
+                margin: 5px;
+                border-radius: 50%;
+            }
+            .user-perfil-min__avatar-image--default
+            {
+                @include main-icon;
+                background-size: contain;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        
+    }
+    .user-perfil-min__user-data
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: calc(100% - 100px);
+        .user-perfil-min__user-data-container
+        {
+            display: flex;
+            flex-direction: column;
+            .user-perfil-min__user-nickname
+            {
+                color: black;
+                font-size: 15px;
+                font-weight: 600;
+                font-family: $third-font;
+            }
+            .user-perfil-min__followers
+            {
+                span 
+                {
+                    font-size: 15px;
+                    font-family: $third-font;
+                }
+            }
+        }
+        .user-perfil-min__follow-buttons
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .user-perfil-min__follow-button
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $border-color;
+                background-color: white;
+                font-family: $third-font;
+                padding: 5px;
+                height: 30px;
+                font-size: 13px;
+                font-weight: 600;
+                border-radius: 5px;
+                margin: 5px 15px;
+            }
+
+            .user-perfil-min__follow-button--selected
+            {
+               color: white;
+               border: transparent 1px solid;
+               @include sec-back;
+            }
+        }
+    }
+    @media screen and (max-width: 610px) {
+        width: 400px
+    }
+    @media screen and (max-width: 410px) {
+        width: 310px
+    }
+}

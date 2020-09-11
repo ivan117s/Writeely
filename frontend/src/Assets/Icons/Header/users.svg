@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="500px" height="500px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<ellipse fill="#D7D7D7" cx="119.524" cy="157.731" rx="70.2" ry="70.41"/>
+<g>
+	<g>
+		<path fill="#D7D7D7" d="M230.618,290c0,28.764-27.9,52-62,52H71.794c-34.1,0-62-23.236-62-52s27.9-52,62-52h96.824
+			C202.718,238,230.618,261.236,230.618,290z"/>
+	</g>
+	<rect x="10" y="287" fill="#D7D7D7" width="220" height="56"/>
+</g>
+<ellipse fill="#D7D7D7" cx="382.524" cy="157.731" rx="70.199" ry="70.41"/>
+<g>
+	<g>
+		<path fill="#D7D7D7" d="M493.618,290c0,28.764-27.9,52-62,52h-96.824c-34.101,0-62-23.236-62-52s27.899-52,62-52h96.824
+			C465.718,238,493.618,261.236,493.618,290z"/>
+	</g>
+	<rect x="273" y="287" fill="#D7D7D7" width="220" height="56"/>
+</g>
+<ellipse fill="#D7D7D7" cx="249.524" cy="192.731" rx="70.2" ry="70.41"/>
+<g>
+	<g>
+		<path fill="#D7D7D7" d="M360.618,325c0,28.764-27.9,52-62,52h-96.824c-34.1,0-62-23.236-62-52s27.9-52,62-52h96.824
+			C332.718,273,360.618,296.236,360.618,325z"/>
+	</g>
+	<rect x="140" y="322" fill="#D7D7D7" width="220" height="56"/>
+</g>
+</svg>

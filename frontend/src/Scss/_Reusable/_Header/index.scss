@@ -1,0 +1,38 @@
+.main-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+    height: 55px;
+    width: 100%;
+    background-color: $main-color;
+    position: fixed;
+    z-index: 10;
+    user-select: none;
+    @include main-back;
+    .main-header__container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $main-font;
+        width: 100%;
+        @import './logo.scss';
+        @import './session/index.scss';
+    }
+    
+    @media screen and (max-width: 800px) 
+    {
+        padding: 0px 30px;
+    }
+    @media screen and (max-width: 400px) 
+    {
+        padding: 0px 10px;
+    }
+}
+
+.main-header-fixed-box
+{
+    height: 55px;
+}

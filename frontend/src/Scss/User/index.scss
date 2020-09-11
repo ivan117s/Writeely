@@ -1,0 +1,14 @@
+.user-interface
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .user-interface-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,80 @@
+.main-header__session
+{
+    @include flex-align-center;
+    height: 100%;
+    .main-header__menu-item
+    {
+        @include flex-align-center;
+        width: 50px;
+        height: 50px;
+        cursor: pointer; 
+    }
+    .search-icon
+    { 
+        height: 20px;
+        width: 20px;
+        background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='100px' height='100px' viewBox='0 0 100 100' enable-background='new 0 0 100 100' xml:space='preserve'%3E%3Ccircle fill='none' stroke='%23FFFFFF' stroke-width='11' stroke-miterlimit='10' cx='41.39' cy='41.136' r='25'/%3E%3Crect x='62.738' y='55.186' transform='matrix(0.7071 -0.7071 0.7071 0.7071 -28.2284 68.2226)' fill='%23FFFFFF' width='11' height='26'/%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M81.305,73.477c1.147,1.185,1.117,3.094-0.068,4.241l-3.595,3.481c-1.186,1.147-3.095,1.117-4.242-0.067 l-0.001-0.001c-1.147-1.185-1.117-3.094,0.068-4.241l3.595-3.481C78.247,72.261,80.156,72.291,81.305,73.477L81.305,73.477z'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        transform-origin: top;
+        background-size: cover;
+    }   
+    .loading-element
+    {
+        width: 115px;
+    }
+    .join-session
+    {
+        @include flex-align-center;
+        justify-content: space-around;
+        font-family: $sec-font;
+        text-decoration: none; 
+        border-radius: 3px;
+        color: white;
+        font-weight: 600;
+        font-size: 15px;
+        height: 35px;
+        width: 115px;
+        .join-session__icon
+        {
+            height: 25px;
+            width: 25px;
+            background-image: url('../../../../Assets/Icons/Header/user_join.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .main-header__session-menu
+    {
+        display: flex;
+        .main-header__menu-items
+        {
+            @include flex-align-center;
+            width: auto;
+            height: 50px;
+            overflow: hidden;
+            @import './web.scss';
+            .main-header__avatar-container
+            {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 55px;
+                height: 55px;
+                .main-header__avatar
+                {
+                    @include main-icon;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 40px !important;
+                    height: 40px !important;
+                }
+            }
+        }
+    }
+}

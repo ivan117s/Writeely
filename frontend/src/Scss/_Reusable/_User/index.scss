@@ -1,0 +1,41 @@
+.user-perfil
+{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    background-color: white;
+    border: 1px solid $border-color;
+    padding: 40px 0px ;
+    margin-bottom: 25px;
+    .user-perfil__container
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 650px; 
+        @import './avatar.scss';
+        @import './Info/index.scss';
+        @import './media.scss';
+        @media screen and (max-width: 750px) 
+        {
+            width: 100%; 
+            flex-direction: column;
+            width: 550px; 
+        }
+    }
+}
+
+.user-perfil--loading
+{
+    @keyframes loading-ani-user {
+        0%{background-color: white;}
+        50%{background-color: $back-color}
+        100%{background-color: white;}
+    }
+    animation: infinite 1s ease loading-ani-user;
+    width: 100%; 
+    border: 1px solid $border-color;
+    height: 250px; 
+}  

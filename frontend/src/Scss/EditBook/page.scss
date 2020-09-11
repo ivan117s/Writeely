@@ -1,0 +1,130 @@
+.edit-book-element-page
+{
+    border: 1px solid $border-color;
+    background-color: white;
+    padding: 25px 35px;
+    margin-top: 25px;
+    min-height: 800px;
+    .edit-book-element-page__styles-menu
+    {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 5px;
+        width: 100%;
+        margin-bottom: 5px;
+        .edit-book-element-page__button
+        {
+            background-color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            padding: 5px;
+            border: 1px solid $border-color;
+            font-family: $third-font;
+            .edit-book-element-page__button-left
+            {
+                height: 20px;
+                width: 20px;
+                background-size: contain;
+                margin: 0 auto;
+                background-image: $left-text-align-icon;
+            }
+
+            .edit-book-element-page__button-right
+            {
+                height: 20px;
+                width: 20px;
+                background-size: contain;
+                margin: 0 auto;
+                background-image: $right-text-align-icon;
+            }
+
+            .edit-book-element-page__button-center
+            {
+                height: 20px;
+                width: 20px;
+                background-size: contain;
+                margin: 0 auto;
+                background-image: $center-text-align-icon;
+            }
+        }
+        
+        .edit-book-element-page__button--select
+        {
+            background-color: rgb(245, 245, 245);
+        }
+        .edit-book-element-page__font-size
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            position: relative;
+            button 
+            {
+                font-family: $main-font;
+                width: 100%;
+            }
+            .edit-book-element-page__font-size-list
+            {
+                background-color: white;
+                width: 70px;
+                border-radius: 5px;
+                list-style: none;
+                font-weight: 600;
+                font-size: 14px;
+                border: 1px solid $border-color;
+                position: absolute;
+                font-family: $main-font;
+                transform: translateY(90px);
+                
+                .edit-book-element-page__font-size-item
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    cursor: pointer;
+                    &:hover
+                    {
+                        background-color: $back-element;
+                    }
+                }
+            }
+        }
+        .edit-book-element-page__button--delete
+        {
+            border-color: none;
+            color: white;
+            @include red-back;
+        }
+    }
+
+    .edit-book-element-page__length
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include red-back;
+        color: white;
+        font-family: $main-font;
+        font-size: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .edit-book-element-paragraph-editable
+    {
+        p 
+        {
+            font-family: $fourth-font;
+            padding: 5px 0px;
+            border-bottom: 1px solid $border-color;
+            line-height: 1.2;
+        }
+        margin-bottom: 10px;
+    }
+    .edit-book-element-paragraph-editable--focused
+    {
+        background-color: $back-element;
+    }
+}

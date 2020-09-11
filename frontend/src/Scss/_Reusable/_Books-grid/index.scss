@@ -1,0 +1,69 @@
+.books-grid-element
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    .books-grid-element__title
+    {
+        width: 95%;
+        margin: 15px 0px;
+        font-size: 18px;
+        font-family: $main-font;
+        padding: 5px;
+        @media screen and (max-width: 500px) 
+        {
+            text-align: center;
+        }
+    }
+    .books-grid-element__grid
+    {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 5px;
+        width: 95%;
+        @import './book.scss';
+        min-height: 250px;
+        @media screen and (max-width: 1620px) 
+        {
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        }
+        @media screen and (max-width: 500px) 
+        {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            .grid-book
+            {
+                width: 250px;
+                margin: 5px;
+            }
+        }
+    }
+    .books-grid-element__render-buttons
+    {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        height: 100px;
+        .books-grid-element__render-button
+        {
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid $border-color;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.034);
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            white-space: nowrap;
+            font-family: $main-font;
+            font-weight: 600;
+            font-size: 15px;
+            color: black;
+        }
+    }
+}
+
+

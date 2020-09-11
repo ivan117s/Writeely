@@ -1,0 +1,16 @@
+.explore-page
+{
+    @import './explore_element/index.scss';
+    padding: 0 15px;
+    .explore-page__results
+    {
+        width: 100%;
+        .explore-page__title 
+        {
+            width: 95%;
+            font-size: 18px;
+            font-family: $third-font;
+            margin: 25px auto;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.user-perfil__statistics
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .user-perfil__statistics-param
+    {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: $main-font;
+        font-size: 14px;
+        text-align: center;
+        span 
+        {
+            font-weight: 600;
+        }
+    }
+    
+    @media screen and (max-width: 500px)
+    {
+        width: 100%;
+        justify-content: center;
+        .user-perfil__statistics-param
+        {
+            justify-content: center;
+            p 
+            {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+    }
+    @media screen and (max-width: 350px) 
+    {
+        grid-template-columns: repeat(2, 1fr);
+        .user-perfil__statistics-param
+        {
+            justify-content: center;
+            p 
+            {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+        
+}
